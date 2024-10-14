@@ -9,9 +9,9 @@ class Gallery {
             console.log("Se necesita un div #gallery")
             return null;
         }
-        this.gallery = document.createElement("div");
-        this.gallery.id = "gallery";
-        this.htmlElement.appendChild(this.gallery);
+        this.slider = document.createElement("div");
+        this.slider.id = "slider";
+        this.htmlElement.appendChild(this.slider);
         this.collection = collection;
         this.LAST_INDEX = collection.length - 1;
         this.DELAY = delay;
@@ -36,9 +36,9 @@ class Gallery {
         this.frame_next = document.createElement("img");
         this.frame_next.id = "next-pic";
 
-        this.gallery.appendChild(this.frame_prev);
-        this.gallery.appendChild(this.frame_curr);
-        this.gallery.appendChild(this.frame_next);
+        this.slider.appendChild(this.frame_prev);
+        this.slider.appendChild(this.frame_curr);
+        this.slider.appendChild(this.frame_next);
         this.htmlElement.appendChild(this.btn_bar);
 
         this.setX(0);
