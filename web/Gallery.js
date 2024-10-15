@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    new Gallery(tortas, 2500);
+    new Gallery(cosa, 2500);
 })
 
 class Gallery {
