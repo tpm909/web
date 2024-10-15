@@ -6,7 +6,7 @@ class Gallery {
     constructor(collection, delay = null) {
         this.htmlElement = document.getElementById("gallery-component");
         if (!this.htmlElement) {
-            console.log("Se necesita un div #gallery")
+            console.log("Se necesita un div #gallery-component")
             return null;
         }
         this.slider = document.createElement("div");
