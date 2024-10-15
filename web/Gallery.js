@@ -31,13 +31,27 @@ class Gallery {
 
         this.frame_prev = document.createElement("img");
         this.frame_prev.id = "prev-pic";
+        
+        this.main_pic_container = document.createElement("div");
+        this.main_pic_container.id = "main_pic_container";
+        this.desc_span = document.createElement("span");
+
+        this.desc_frame = document.createElement("div");
+        this.desc_frame.id = "desc_frame";
+        this.desc_frame.appendChild(this.desc_span);
+
         this.frame_curr = document.createElement("img");
         this.frame_curr.id = "this-pic";
+
+
+        
         this.frame_next = document.createElement("img");
         this.frame_next.id = "next-pic";
 
         this.slider.appendChild(this.frame_prev);
-        this.slider.appendChild(this.frame_curr);
+        this.slider.appendChild(this.main_pic_container);
+        this.main_pic_container.appendChild(this.frame_curr);
+        this.main_pic_container.appendChild(this.desc_frame);
         this.slider.appendChild(this.frame_next);
         this.htmlElement.appendChild(this.btn_bar);
 
@@ -61,7 +75,7 @@ class Gallery {
         this.frame_prev.src = prevImg.download_url;
         this.frame_curr.src = currentImg.download_url;
         this.frame_next.src = nextImg.download_url;
-
+        this.desc_span.innerText = currentImg.desc;
         this.frame_curr.alt = `A photo by ${currentImg.alt}.`
 
         if (this.interval)
