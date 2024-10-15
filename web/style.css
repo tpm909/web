@@ -22,7 +22,7 @@ background-image: linear-gradient(to right  ,rgb(109, 12, 12) ,rgb(206, 2, 43));
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 75px;
     height: 35px;
     width: 100%;
@@ -45,7 +45,7 @@ padding: 9px;
     background-color: #f9f9f9;
     min-width: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    
   }
   
   .contenido a {
@@ -66,3 +66,20 @@ padding: 9px;
   .bajada:hover .dropbtn {
     background-color: #3e8e41;
   }
+
+  header{
+    z-index: 2;
+  } 
+  
+  #gallery-component {
+    position: absolute;
+   top: 250px;
+  margin-left: 30%;
+  margin-right: 30%;
+  
+  }
+
+#slider{
+  width: 100%;
+}
+
