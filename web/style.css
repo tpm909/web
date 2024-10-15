@@ -72,14 +72,29 @@ padding: 9px;
   } 
   
   #gallery-component {
-    position: absolute;
-   top: 250px;
-  margin-left: 30%;
-  margin-right: 30%;
   
+    
+  position: absolute;
+   top: 250px;
+   
+    
+   
+   width: 100%;
+   
   }
 
 #slider{
-  width: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ gap: 5%;
+ 
 }
 
+.fondo {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+ height: 300px;
+background-color: rgb(94, 11, 11);
+}
