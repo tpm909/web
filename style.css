@@ -6,7 +6,7 @@ background-color: rgb(27, 9, 0);
 }
 
 
-h1 {
+.titulo h1 {
   display: inline-block;
 padding-left: 50px;
 padding-bottom: 25px;
@@ -18,6 +18,7 @@ text-shadow: 3px 2px rgb(87, 24, 87);
   display: flex;
     position: fixed;
     background-color: brown;
+    top: 0px;
     left:0% ;
 right: 0%;
 padding-top: 25px;
@@ -55,9 +56,26 @@ transition: 500ms;
   color: #ffffff;
 }
 
-  header{
-    z-index: 2;
-  } 
+
+main {
+  margin-top: 50px;
+}
+
+main  h1 {
+  margin-top: 150px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
   
   #gallery-component {
   
@@ -140,5 +158,5 @@ opacity: 60%;
 transition: 500ms;
 }
 
- 
+
   
