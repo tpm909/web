@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", main)
 var parafo = document.createElement("h1")
 
 function main() {
-    
+
     document.getElementById("boto").addEventListener("click", validacionmax)
 
 
@@ -16,11 +16,11 @@ function main() {
 function validacionmax() {
     if (validacionNom() & validacionEmail() & validacionTel()) {
 
-        
+
         parafo.innerText = "cosa"
         document.getElementById("form").appendChild(parafo)
 
-    }else{parafo.innerText=""}
+    } else { parafo.innerText = "" }
 
 
 

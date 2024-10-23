@@ -33,7 +33,7 @@ class Gallery {
 
         this.frame_prev = document.createElement("img");
         this.frame_prev.id = "prev-pic";
-        
+
         this.main_pic_container = document.createElement("div");
         this.main_pic_container.id = "main_pic_container";
         this.desc_span = document.createElement("span");
@@ -46,7 +46,7 @@ class Gallery {
         this.frame_curr.id = "this-pic";
 
 
-        
+
         this.frame_next = document.createElement("img");
         this.frame_next.id = "next-pic";
 
@@ -73,7 +73,7 @@ class Gallery {
         const currentImg = this.collection[this.x];
         const prevImg = this.collection[this.prev];
         const nextImg = this.collection[this.next];
-        
+
         this.frame_prev.src = prevImg.download_url;
         this.frame_curr.src = currentImg.download_url;
         this.frame_next.src = nextImg.download_url;
