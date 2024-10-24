@@ -1,10 +1,17 @@
+body {
+justify-items: center;  
+}
+
+
+  
+
 div form {
   width: 400px;
   height: 600px;
   padding: 10px;
-  border: 5px solid rgb(86, 40, 172);
-  margin-left: 30%;
-  background-color: rgb(59, 27, 145);
+  border: 5px solid rgb(184, 15, 43);
+  background-color: rgb(117, 2, 17);
+  background-image: linear-gradient(to top,rgb(77, 1, 1),rgb(158, 0, 0));
 }
 
 
@@ -12,24 +19,26 @@ div form {
 input {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin-top: 20px;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px rgb(255, 0, 242);
-  background-color: rgb(27, 27, 121);
+  border: 1px solid  rgb(110, 2, 2);
+  background-color: rgb(165, 2, 43);
   transition: 0.5s;
   outline: none;
 }
 
 input:focus {
-  background-color: rgb(46, 9, 80);
+  background-color: rgb(95, 2, 22);
+}
+
+input::placeholder{
+  color: rgb(219, 111, 149);
 }
 
 
-
-
 input[type=button] {
-  background-color: cadetblue;
+  background-color: rgb(172, 14, 48);
   color: aliceblue;
   padding: 12px 20px;
   border: none;
@@ -38,5 +47,12 @@ input[type=button] {
 }
 
 input[type=button]:hover {
-  background-color: aqua;
+  background-color: rgb(148, 5, 5);
+}
+
+textarea {
+  margin-top: 20px;
+  width: 370px;
+  height: 209px;
+  resize: none;
 }
