@@ -4,6 +4,7 @@ var parafo = document.createElement("h1")
 
 function main() {
 
+
     document.getElementById("boto").addEventListener("click", validacionmax)
 
 
@@ -16,15 +17,20 @@ function main() {
 function validacionmax() {
     if (validacionNom() & validacionEmail() & validacionTel()) {
 
+document.getElementById("rec").innerText = document.getElementById("queja").value;
+       document.getElementById("conf").style.display="block";
+       
+       
+       
 
-        parafo.innerText = "cosa"
-        document.getElementById("form").appendChild(parafo)
 
     } else { parafo.innerText = "" }
 
 
 
 }
+
+
 
 function validacionNom() {
 
@@ -34,7 +40,7 @@ function validacionNom() {
 
     if (ok) {
         document.getElementById("valn").innerText = "";
-
+document.getElementById("NOM").innerText = campo.value;
 
     } else {
         document.getElementById("valn").innerText = "ingrese datos validos";
@@ -53,7 +59,7 @@ function validacionEmail() {
     let ok = cosa.test(campo.value);
     if (ok) {
         document.getElementById("valm").innerText = "";
-
+        document.getElementById("email").innerText = campo.value;
 
     } else {
         document.getElementById("valm").innerText = "ingrese datos validos";
@@ -71,7 +77,7 @@ function validacionTel() {
     let ok = campo.value.length == 10 && cosa.test(campo.value)
     if (ok) {
         document.getElementById("valt").innerText = "";
-
+        document.getElementById("tele").innerText = campo.value;
 
     } else {
         document.getElementById("valt").innerText = "ingrese datos validos";
@@ -81,3 +87,9 @@ function validacionTel() {
     return ok;
 
 }
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById("conf")) {
+        document.getElementById("conf").style.display = "none";
+    }
+  }

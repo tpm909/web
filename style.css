@@ -5,13 +5,14 @@
 }
 
 * {
+  padding: 0%;
   margin: 0%;
   box-sizing: border-box;
 }
 
 body {
   background-color: rgb(27, 9, 0);
-  min-height: 80vh;
+ 
 }
 
 header {
@@ -70,24 +71,20 @@ section div p {
   justify-content: space-around;
 }
 
-.menu a {
-
+a {
+text-decoration: none;
   transition: 500ms;
-}
-
-.menu a:hover {
-  color: #ffffff;
-}
-
-.menu a {
-  text-decoration: none;
   color: black;
 }
 
-#seleccion {
+
+.seleccion {
   color: #ffffff;
 }
 
+a:hover{
+  color:rgb(248, 248, 248)
+}
 
 main {
   margin-top: 150px;
@@ -120,6 +117,9 @@ footer section {
   text-align: center;
 }
 
+footer section a {
+color: black;
+}
 
 .fondo {
 
@@ -151,6 +151,7 @@ footer section {
   object-fit: contain;
   background-color: #920a33;
   border: 5px solid rgb(167, 13, 47);
+  
 }
 
 #slider #this-pic {
@@ -175,6 +176,7 @@ footer section {
   display: flex;
   background-color: #920a33;
   border: 5px solid rgb(167, 13, 47);
+
 }
 
 #desc_frame:hover,
@@ -216,7 +218,7 @@ footer section {
 #fototexto img {
   width: auto;
   height: 33rem;
-  border: 5px solid rgb(167, 13, 47);
+  border: 10px solid rgb(167, 13, 47);
 }
 
 #cosa2 {
@@ -226,4 +228,6 @@ footer section {
   color: #f1f1f1;
   height: 33rem;
   width: 25rem;
+  overflow: scroll;
+  overflow: hidden;
 }
