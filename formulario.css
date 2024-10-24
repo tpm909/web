@@ -23,7 +23,8 @@ label{
 input {
   width: 100%;
   padding: 12px 20px;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border: none;
   border: 1px solid  rgb(110, 2, 2);
@@ -57,7 +58,7 @@ input[type=button]:hover {
 textarea {
   border-color: black;
   background-color: rgb(146, 1, 37);
-  margin-top: 20px;
+  margin-top: 15px;
   width: 370px;
   height: 209px;
   resize: none;
