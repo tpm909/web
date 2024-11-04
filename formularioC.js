@@ -16,7 +16,7 @@ function main() {
 
 function validacionmax() {
     if (validacionNom() & validacionEmail() & validacionTel()) {
-
+document.getElementById("form").reset();
 document.getElementById("rec").innerText = document.getElementById("queja").value;
        document.getElementById("conf").style.display="block";
        
@@ -24,7 +24,12 @@ document.getElementById("rec").innerText = document.getElementById("queja").valu
        
 
 
-    } else { parafo.innerText = "" }
+    } else { 
+        
+        
+        
+        
+        parafo.innerText = "" }
 
 
 
